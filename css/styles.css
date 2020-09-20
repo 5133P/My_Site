@@ -1,0 +1,240 @@
+/*
+Selector { property:value;}
+
+Selector = who
+Property = what
+Value = How
+
+*/
+/************************TAG SELECTOR***************/
+/*Broadest Selector
+Overridden by CLASS < ID
+body {
+  background-color:blue;
+}
+*/
+a{
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+body {
+  color: #40514e;
+  margin: 0px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+hr {
+  border: dotted #d6e0f0 6px;
+  border-bottom: none;
+  /* font-size: 70px;
+  color: #d6e0f0; */
+  width: 5%;
+  margin: 100px auto 100px auto;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 90px;
+  color: #00bcd4;
+  line-height: 2;
+  /* margin: 0 auto 0 auto;
+  Centers an element that has a specific width otherwise
+  is being centered by "text-align: center" in the body*/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #00bcd4;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999e;
+}
+
+p{
+  line-height: 2;
+}
+
+/************************CLASS SELECTOR***************/
+/*Second to broadest Selector
+Overrides TAG
+Overridden by ID
+.Selector { property:value;}*/
+.top-container {
+  /* padding: 20px;
+  border: solid 10px;
+  border-color: black;
+  height: 200px;
+  width: 200px; */
+  background-color: #a1eafb;
+  padding-top: 100px;
+  position: relative;
+  /* display: inline-block; */
+}
+
+.middle-container {
+  /* background-color: red; */
+  /* border: 20px;
+  border-style: solid;
+  border-color: black; */
+  /* height: 200px;
+  width: 200px; */
+  /* margin-left: 260px; */
+  position: relative;
+  display: inline-block;
+}
+
+.bottom-container {
+  /* background-color: yellow;
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  height: 200px;
+  width: 200px;
+  margin-left: 500px;
+  position: relative;
+  display: inline-block; */
+  background-color: #a1eafb;
+  padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.red {
+  /* height: 100px;
+  width: 100px; */
+  /* background-color: red;
+  position: absolute;
+  display: inline-block; */
+  /* left: 200px;
+  top: 200px; */
+}
+
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  display: inline-block;
+}
+
+.yellow {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: absolute;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.hoops {
+  float: left;
+  /* height: 100px; */
+  width: 30%;
+  /* margin: 30px; */
+  margin: auto 30px auto 30px;
+
+}
+
+.moss {
+  /* width: 50%; */
+  float: right;
+  width: 50%;
+  margin-left: 30px;
+}
+
+.profile_pic {
+  margin: 40px auto 30px;
+  width: 40%;
+}
+
+.dot-break {
+    font-size: 70px;
+    color: #d6e0f0
+
+}
+
+.profile{
+    margin: auto;
+    width: 50%
+}
+.contact-me {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.contact-message {
+  /* width: 40%; */
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px auto 60px;
+}
+
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #502bb8);
+  background-image: -moz-linear-gradient(top, #11cdd4, #502bb8);
+  background-image: -ms-linear-gradient(top, #11cdd4, #502bb8);
+  background-image: -o-linear-gradient(top, #11cdd4, #502bb8);
+  background-image: linear-gradient(to bottom, #11cdd4, #502bb8);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 40px auto 200px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6d6dd1;
+  font-family: 'Montserrat', sans-serif;
+  background-image: -webkit-linear-gradient(top, #6d6dd1, #6aedf2);
+  background-image: -moz-linear-gradient(top, #6d6dd1, #6aedf2);
+  background-image: -ms-linear-gradient(top, #6d6dd1, #6aedf2);
+  background-image: -o-linear-gradient(top, #6d6dd1, #6aedf2);
+  background-image: linear-gradient(to bottom, #6d6dd1, #6aedf2);
+  text-decoration: none;
+}
+
+.copyright {
+  color: #eaf6f6;
+}
+/************************ID SELECTOR***************/
+/*Most specific Selector
+Overrides TAG < CLASS
+only one per page
+#Selector { property:value;}*/
